@@ -1,0 +1,73 @@
+div {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./../../assets/image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+::ng-deep {
+    .auth0-lock {
+        .auth0-lock-widget {
+            width: 420px !important;
+
+            .auth0-lock-widget-container {
+                padding: 32px 54px !important;
+                background: white !important;
+
+                .auth0-lock-form {
+                    padding: 0 !important;
+                }
+            }
+        }
+
+        .auth0-lock-overlay {
+            opacity: 0.3 !important;
+        }
+
+        .auth0-lock-submit {
+            width: 120px !important;
+            position: absolute !important;
+            right: 0px !important;
+            bottom: -10px !important;
+            height: 48px !important;
+            z-index: 100 !important;
+            border-radius: 4px !important;
+
+            .auth0-label-submit {
+                // must set to make loading circle is center
+                height: initial !important;
+                line-height: initial !important;
+            }
+        }
+
+        .auth0-lock-alternative {
+            text-align: left !important;
+            margin-top: 32px !important;
+        }
+
+        // hide icon input
+        .auth0-lock-input-wrap.auth0-lock-input-wrap-with-icon {
+            padding: 0 !important;
+        }
+
+        .auth0-lock-header {
+            background: white !important;
+
+            .auth0-lock-header-bg {
+                background: white !important;
+
+                .auth0-lock-header-bg-blur {
+                    background-image: none !important;
+                }
+            }
+        }
+
+        .auth0-global-message-error {
+            background: white !important;
+            color: #E64121 !important;
+            text-align: left !important;
+            text-transform: initial !important;
+        }
+    }
+}
